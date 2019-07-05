@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<!-- Database -->
+	<property>
+		<!-- 数据库驱动 -->
+		<name>DatabaseDriver</name>
+		<value>com.microsoft.sqlserver.jdbc.SQLServerDriver</value>
+	</property>
+
+	<property>
+		<!-- 数据库连接字符串 -->
+		<name>DatabaseURL</name>
+		<!-- 若为MSSQL2005，则可能的连接字符串为：jdbc:sqlserver://localhost:1433;DatabaseName=demo -->
+		<value>jdbc:sqlserver://ee.seu.edu.cn:1433;DatabaseName=demo</value>
+	</property>
+
+	<property>
+		<!-- 数据库用户名 -->
+		<name>DatabaseUserName</name>
+		<value>sa</value>
+	</property>
+
+	<property>
+		<!-- 数据库密码 -->
+		<name>DatabaseUserPassword</name>
+		<value>eeseu</value>
+	</property>
+
+	<property>
+		<!-- 程序启动时自动连接数据库 -->
+		<name>AutoConnect</name>
+		<!-- true or false, 默认false -->
+		<value>false</value>
+	</property>
+
+	<!-- jd.com Filter -->
+	<property>
+		<!-- 初始网址，必须以http://*.jd.com/开头 -->
+		<name>startURL</name>
+		<!-- 用以下网址能更快的获取商品信息，而http://item.jd.com/较慢 -->
+		<value>http://item.jd.com/1257425.html</value>
+	</property>
+
+	<property>
+		<!-- 跳过的主机 -->
+		<name>IgnoreHost</name>
+		<value>wiki.jd.com, app.jd.com, help.jd.com, caipiao.jd.com</value>
+	</property>
+
+	<!-- Spider -->
+	<property>
+		<!-- 网页解析线程数 -->
+		<name>ThreadsNumber</name>
+		<value>4</value>
+	</property>
+
+	<property>
+		<!-- 最大爬取url数，-1则不限制 -->
+		<name>MaxUrlsNumber</name>
+		<value>-1</value>
+	</property>
+</configuration>
